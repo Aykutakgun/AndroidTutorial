@@ -94,7 +94,29 @@ class MainActivity : AppCompatActivity() {
         //Conversion
         val yasInt=yas.toInt()
         println(yasInt)
-
         println(yas.toInt())
+
+        println("-----------Boolean------------")
+        var benimBool:Boolean=true
+        benimBool=false
+
+        var kullaniciYas="35"
+        println(kullaniciYas.toInt()>18)
+
+        // <    küçüktür
+        // >    büyüktür
+        // <=   küçük eşit
+        // >=   büyük eşit
+        // ==   eşittir
+        // !=   eşit değildir
+        // &&   ve
+        // ||   veya
+
+        println("aykut"=="aykut")
+        println(10 != 10)
+        println(4>3 && 3>5)
+        println(4>3 || 3>5)
+
+
     }
 }
