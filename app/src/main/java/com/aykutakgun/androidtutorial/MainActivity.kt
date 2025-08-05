@@ -117,6 +117,48 @@ class MainActivity : AppCompatActivity() {
         println(4>3 && 3>5)
         println(4>3 || 3>5)
 
+        println("--------------Array---------------")
+
+        val stringOrnegi="aykut"
+
+        val benimDizim= arrayOf(stringOrnegi,"akgun","azra","cagri","goktug")
+        println(benimDizim[0])
+        println(benimDizim[1])
+        println(benimDizim.last()) //sonuncu index değeri gelir
+
+        benimDizim[1]="sam" //1.index değişir,val olmasına rağmen çünkü burada val olarak benimDizim dizisi tanımlı içeriği değil içerik değişebilir
+
+        println(benimDizim[1])
+        println(benimDizim.get(3)) //3.indeks değeri gelir
+
+        val numaraDizisi= arrayOf(1,2,5,6,12,22)
+        println(numaraDizisi[3]*10)
+
+        println("--------------ArrayList------------")
+
+        val isimListesi= arrayListOf("aykut","akgün","azra","cagri","goktug")
+
+        isimListesi.add("ahmet") //listenin sonuna ekleme yapar
+        println(isimListesi[0])
+        println(isimListesi[1])
+        println(isimListesi[2])
+        val karisikListe= arrayListOf(7,5,4,"aykut")
+
+
+        val numaralistesi= arrayListOf(1,2,3,5,16)
+        val digerOrnekListe=ArrayList<Int>()
+        //ikiside list tanımlamada kullanılır
+        //1.list olustururken değerleri ile olustururuz
+        //2.list olusturup içeriğinin tipini belirtip değerleri sonradan verebilirz
+
+        digerOrnekListe.add(5)
+        digerOrnekListe.add(20)
+        digerOrnekListe.add(10)
+
+        println(numaralistesi[1]* digerOrnekListe[0])
+
+
+
 
     }
 }
