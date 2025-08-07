@@ -136,17 +136,17 @@ class MainActivity : AppCompatActivity() {
 
         println("--------------ArrayList------------")
 
-        val isimListesi= arrayListOf("aykut","akgün","azra","cagri","goktug")
+        val isimListesi= arrayListOf("aykut","akgün","azra","cagri","goktug") //kotlin listenin string olduğunu algılıyor
 
         isimListesi.add("ahmet") //listenin sonuna ekleme yapar
         println(isimListesi[0])
         println(isimListesi[1])
         println(isimListesi[2])
-        val karisikListe= arrayListOf(7,5,4,"aykut")
+        val karisikListe= arrayListOf(7,5,4,"aykut")    //kotlin liste karısık olduğu için farklı tip bildirisi yapıyor collection gibi
 
 
-        val numaralistesi= arrayListOf(1,2,3,5,16)
-        val digerOrnekListe=ArrayList<Int>()
+        val numaralistesi= arrayListOf(1,2,3,5,16)    //kotlin listenin int olduğunu algılıyor
+        val digerOrnekListe=ArrayList<Int>()           //kotline listenin int olduğunu bildiriyoruz
         //ikiside list tanımlamada kullanılır
         //1.list olustururken değerleri ile olustururuz
         //2.list olusturup içeriğinin tipini belirtip değerleri sonradan verebilirz
@@ -157,8 +157,11 @@ class MainActivity : AppCompatActivity() {
 
         println(numaralistesi[1]* digerOrnekListe[0])
 
+        val karisikList=ArrayList<Any>()  //kotline listenin karışık olduğunu bildiriyoruz
 
-
+        println("---------------Set-------------")
+        //indeksleme yapmıyor..
+        //içerisinde tekil eleman barındıran indeks yapısı olmayan
 
     }
 }
