@@ -160,8 +160,33 @@ class MainActivity : AppCompatActivity() {
         val karisikList=ArrayList<Any>()  //kotline listenin karışık olduğunu bildiriyoruz
 
         println("---------------Set-------------")
-        //indeksleme yapmıyor..
-        //içerisinde tekil eleman barındıran indeks yapısı olmayan
+        //setof -->dizi gibi add yok
+        //HashSet<Type>() sınıftır ve hash fonksiyonu ile liste içerisi arama yapar,list gibi add var,foreach de tekrarlı öğeleri vermez
+        //set indeksleme yapmıyor..
+        //setof içerisinde tekil eleman barındıran indeks yapısı olmayan,tekrarlı değerleri vermez
+
+        val ornekDizi= arrayOf(10,10,10,10,20,30,40)
+        println(ornekDizi[0])
+        println(ornekDizi[1])
+
+        val ornekSet= setOf(10,10,10,10,20,30,40)
+        println(ornekSet.size)
+
+        ornekSet.forEach {
+            println(it)
+        }
+
+        val bosSetOrnegi=HashSet<String>()
+        bosSetOrnegi.add("Aykut")
+        bosSetOrnegi.add("Aykut")
+        bosSetOrnegi.add("Aykut")
+        bosSetOrnegi.add("Aykut")
+
+        bosSetOrnegi.forEach{
+            println(it)
+        }
+
+        val ornekTekilSet=ornekDizi.toHashSet() //dönüştürüp yeni bir değişkine değer olarak atanıor
 
     }
 }
