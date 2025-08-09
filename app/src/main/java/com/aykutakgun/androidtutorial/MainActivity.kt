@@ -188,5 +188,6 @@ class MainActivity : AppCompatActivity() {
 
         val ornekTekilSet=ornekDizi.toHashSet() //dönüştürüp yeni bir değişkine değer olarak atanıor
 
+        //setof dizi hashset listeg gibi diyebilirz
     }
 }
